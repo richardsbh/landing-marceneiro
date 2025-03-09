@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marceneiro Profissional</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            line-height: 1.6;
+        }
+        header {
+            background: #8B5A2B;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            padding: 40px 0;
+        }
+        .section {
+            padding: 20px;
+            background: #f4f4f4;
+            border-radius: 8px;
+        }
+        .section h2 {
+            color: #8B5A2B;
+        }
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .flex-item {
+            flex: 1;
+            min-width: 300px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        input, textarea, button {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: #8B5A2B;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+        button:hover {
+            background: #6B4226;
+        }
+        @media (max-width: 768px) {
+            .flex-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Marceneiro Profissional</h1>
+        <p>Qualidade e precisão em móveis sob medida</p>
+    </header>
+    <div class="container">
+        <section class="section">
+            <h2>Sobre Nós</h2>
+            <p>Somos especialistas em marcenaria, criando móveis personalizados com alta qualidade e acabamento impecável.</p>
+        </section>
+        <section class="section">
+            <h2>Nossos Serviços</h2>
+            <div class="flex-container">
+                <div class="flex-item">Móveis planejados</div>
+                <div class="flex-item">Reformas e restaurações</div>
+                <div class="flex-item">Design exclusivo</div>
+            </div>
+        </section>
+        <section class="section">
+            <h2>Vantagens e Benefícios</h2>
+            <ul>
+                <li>Materiais de alta qualidade</li>
+                <li>Acabamento personalizado</li>
+                <li>Entrega no prazo</li>
+            </ul>
+        </section>
+        <section class="section">
+            <h2>Entre em Contato</h2>
+            <form>
+                <input type="text" placeholder="Seu Nome" required>
+                <input type="email" placeholder="Seu E-mail" required>
+                <textarea placeholder="Sua Mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
